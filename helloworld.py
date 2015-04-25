@@ -1,5 +1,7 @@
 __author__ = 'Defron'
 
+from ISSA.MemberMailer.Objects import Member
+
 
 class HelloWorld():
     def print_msg(self):
@@ -8,7 +10,6 @@ class HelloWorld():
         else:
             # Impossible
             raise Exception('This is impossible!!!!')
-
 
 if (__name__ == '__main__'):
     printhello = HelloWorld()
@@ -33,14 +34,12 @@ if (__name__ == '__main__'):
         def search_by_membership(status):
             pass
 
-billy = Member()
-billy.first_name = "Billy"
-billy.last_name = "Bob Thorton"
-billy.email = "Billy@bobthorton.com"
-billy.phone = "8947546789"
-billy.grad_year = "2015"
-
-billy.str()
-
-print billy
-
+    print_hello = HelloWorld()
+    print_hello.print_msg()
+    billy = Member()
+    billy.first_name = "Billy"
+    billy.last_name = "Bob Thorton"
+    billy.email = "billy@bobthorton.com"
+    billy.phone = "8947546789"
+    billy.grad_year = "2015"
+    print(billy)
