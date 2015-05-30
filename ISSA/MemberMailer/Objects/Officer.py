@@ -1,12 +1,12 @@
-class Officer():
-    
-    first_name = ""
-    last_name = ""
-    officerType = ""
-    #Officer positions are: secretary, absoc representative, historian, and webmaster
+from ISSA.MemberMailer.Objects.member import Member
+
+
+class Officer(Member):
+
+    officer_position = ""
     board_year = ""
     org_email = ""
-    elected = ""
+    current = None
 
     def is_current_officer(self):
         pass
@@ -14,6 +14,6 @@ class Officer():
     def __str__(self):
         return self.first_name + " " + self.last_name
 
-    def createOfficer(self):
-        if(self == current) and (self == elected):
-            return self.officerType
+    def create_officer(self):
+        if self == Member:
+            return self.officer_position
